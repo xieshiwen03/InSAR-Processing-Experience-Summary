@@ -144,7 +144,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 21 `pixel_area`再次对比一下
 
-    pixel_area 20260722.mli.par EQA.dem.par DEM.dem 20260722.lt_fine  ls_map  inc  pux_sigma1 pix_gamma1
+    pixel_area 20260722.mli.par EQA.dem.par DEM.dem 20260722.lt_fine  ls_map  inc  pix_sigma1 pix_gamma1
 
 > _看range pixels:6763_
 
