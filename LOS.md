@@ -307,7 +307,8 @@ phase_sim 20260722.slc.par  20260722_20260803.off 20260722_20260803.base DEM/202
 ### 6 `SLC_diff_intf` 生成干涉对
 
 ```bash
-SLC_diff_intf 20260722.slc 20260803.rskc 20260722.slc.par 20260803.rslc.par 20260722_20260803.off 20260722_20260803.sim_unw 20260722_20260803.diff_int 10 2
+SLC_diff_intf  20260722.slc 20260803.rslc 20260722.slc.par  20260803.rslc.par  20260722_20260803.off 20260722_20260803.sim_unw  20260722_20260803.diff_int 10 2 
+
 ```
 
 > **unw是解缠后的文件**
