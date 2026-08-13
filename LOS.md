@@ -387,7 +387,7 @@ disdt_pwr 20260722_20260803.diff.unw 20260722.rmli 6763 1  0  -3.14 3.14 1
 grep 'lines' EQA.dem.par --7314
 grep 'width' EQA.dem.par --10872
 geocode_back 20260722_20260803.diff.unw 6763 DEM/20260722.lt_fine geo_20260722_20260803.diff.unw 10872 7314 1 0
-disdt_pwr 20260722_20260803.diff.unw DEM/geo_20260722.rmli 10872 1  0  -3.14 3.14 1
+disdt_pwr geo_20260722_20260803.diff.unw  DEM/geo_20260722.mli  10872 1 0 -3.14 3.14 1
 ```
 
 ## 转成LOS向形变
