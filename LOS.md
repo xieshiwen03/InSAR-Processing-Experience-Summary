@@ -273,7 +273,7 @@ ScanSAR_coreg.py 20260722.vv.SLC_tab 20260722 20260803.vv.SLC_tab    20260803 20
 ### 1 `SLC_mosaic` 拼接
 
 ```bash
-_S1_TOPS 20260803.vv.RSLC_tab  20260803.rslc 20260803.rslc.par  10 2`
+SLC_mosaic_S1_TOPS 20260803.vv.RSLC_tab  20260803.rslc 20260803.rslc.par  10 2
 ```
 
 ### 2 `multi_look` `dis2pwr` 看一下拼接结果
