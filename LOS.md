@@ -263,7 +263,7 @@ cat 20260803.vv.SLC_tab
 ```bash
 cp 20260803.vv.SLC_tab 20260803.vv.RSLC_tab
 vim 20260803.vv.RSLC_tab --slc→rslc
-ScanSAR_coreg.py 2026072.vv.SLC_tab 20260722 20260803.vv.SLC_tab    20260803 20260803.vv.RSLC_tab DEM/20260722.hgt  10 2
+ScanSAR_coreg.py 20260722.vv.SLC_tab 20260722 20260803.vv.SLC_tab    20260803 20260803.vv.RSLC_tab DEM/20260722.hgt  10 2
 ```
 
 > **20260722_20260803diff.bmp:配准结果**
