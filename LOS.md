@@ -407,7 +407,7 @@ dispmap_LOS 20260722_20260803.diff.unw  10872 5.406 geo_20260722_20260803.diff.l
 ### 1 `data2geotiff`
 
 ```bash
-dataa2geotif DEM/EQA.dem.par geo_20260722_20260803.diff.los  2 geo_20260722_20260803.diff.los.tif NaN
+data2geotiff DEM/EQA.dem.par geo_20260722_20260803.diff.los  2 geo_20260722_20260803.diff.los.tif NaN
 ```
 
 > _tiff格式：geo_20260722_20260803.diff.los.tif_
