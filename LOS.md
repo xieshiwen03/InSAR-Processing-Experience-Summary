@@ -39,7 +39,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 5 `SLC_mosaic_S1_TOPS`把三个条带拼在一起
 
-    SLC_mosaic_S1_TOPS 20260722.VV.SLC_tab 20260722.slc 20260722.slc.par 10 2
+    SLC_mosaic_S1_TOPS 20260722.vv.SLC_tab 20260722.slc 20260722.slc.par 10 2
 
 ### 6 `multi_look` 检查是否拼在了一起
 
