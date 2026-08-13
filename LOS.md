@@ -125,14 +125,14 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 18 `oddset_pwrm`
 
-    offset_pwrm pix_sigma0 20260722.mli 20260722.diff_par  offs snr 256 256 offsets 2 32 32 0.2
+    offset_pwrm pix_sigma0 20260722.mli 20260722.diff.par  offs snr 256 256 offsets 2 32 32 0.2
 
 > _`number of offsets above correlation threshold: 573 of 1024` 要超过10%_  
 > _效果不好时：256 256 调大、32 32 调小_
 
 ### 19 `oddset_fitm`
 
-    offset_fitm offs snr  20260722.diff_par  - -  0.3 3
+    offset_fitm offs snr  20260722.diff.par  - -  0.3 3
 
 > _看结果：`final model fit std. dev. (samples) range: 0.0709 azimuth:0.0381`_  
 > **range小于0.1、azimuth小于0.2**
@@ -140,7 +140,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 ### 20 `gc_map_fine`修正查找表
 
     grep 'width' EQA.dem.par (获得宽度10872)
-    gc_map_fine 20260722.lt 10872 20260722.diff_par 20260722.lt_fine 1
+    gc_map_fine 20260722.lt 10872 20260722.diff.par 20260722.lt_fine 1
 
 ### 21 `pixel_area`再次对比一下
 
