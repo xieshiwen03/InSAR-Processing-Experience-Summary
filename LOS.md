@@ -102,7 +102,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 13 `gc_map2` 查找表
 
-    gc_maps 20260722.mli.par DEM_31_34_130_134.dem.par DEM_31_34_130_134.dem EQA.dem.par DEM.dem 20260722.lt 1 1 ls_map -  inc - -  20260722.sim_sar u v psi pix
+    gc_map2 20260722.mli.par DEM_31_34_130_134.dem.par DEM_31_34_130_134.dem EQA.dem.par DEM.dem 20260722.lt 1 1 ls_map -  inc - -  20260722.sim_sar u v psi pix
 
 > _看 DEM segment:width和 nlines_  
 > _EQA.dem.par是DEM的配置文件_
