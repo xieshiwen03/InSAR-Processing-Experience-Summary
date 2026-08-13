@@ -114,9 +114,8 @@ _先把文件分成升轨和降轨，方便后续处理_
 ### 15 `dis2pwr`看对比
 
     dis2pwr 20260722.mli  pix_sigma0 6763 6763
-
-> **这两个数据的宽度是从哪里看到的，为什么都是6763？**  
-> **range pixels: 6763 azimuth lines: 6560**
+  
+> **range pixels(width): 6763 azimuth lines(nlines): 6560**
 
 ### 16 `create_diff_par`存偏移量
 
@@ -126,7 +125,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 18 `oddset_pwrm`
 
-    offset_pwrm pix_sigma0 20260722.mli 20260722.diff_par  offd snr 256 256 offsets 2 32 32 0.2
+    offset_pwrm pix_sigma0 20260722.mli 20260722.diff_par  offs snr 256 256 offsets 2 32 32 0.2
 
 > _`number of offsets above correlation threshold: 573 of 1024` 要超过10%_  
 > _效果不好时：256 256 调大、32 32 调小_
