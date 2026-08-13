@@ -6,7 +6,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 1 `S1_import_SLC_from_zipfiles`/`read _S1_TOPS_SLC.py`主影像转gamma
 
-    read_S1_TOPS_SLC.py S1C_IW_SLC_1SDV_20260722T091318_20260722T008654_01125E_027E0E_4884.zip' --root_name 20260722 --pol VV
+    read_S1_TOPS_SLC.py S1C_IW_SLC_1SDV_20260722T091318_20260722T008654_01125E_027E0E_4884.zip --root_name 20260722 --pol VV
 
 输入：1、input(原始zip文件)、--root_name name(用时间命名)、 --pol txt(选择极化方式)、其他的比如brust文件可以忽略，只整个处理也行
 
