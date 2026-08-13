@@ -334,7 +334,7 @@ adf 20260722_20260803.diff_int 20260722_20260803.diff_int_filt 20260722_20260803
 ### 9 `dis2pwr`滤波前后对比
 
 ```bash
-dis2pwr 20260722_20260803.diff_int 20260722_20260803.diff_int_filt 20260722.rmli 6763 6763 1 0
+dis2mph_pwr  20260722_20260803.diff_int 20260722_20260803.diff_int_filt  20260722.rmli 6763  6763 1 0
 ```
 
 ### 10 `cc_ad`、`cc_wave`滤波的其他方法
