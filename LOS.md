@@ -109,7 +109,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 14 `pixel_area`检查SAR和DEM是否一样了
 
-    pixel_area 20260722.mli.par EQA.dem.par DEM.dem 20260722.lt  ls_map  inc  pux_sigma0 pix_gamma0
+    pixel_area 20260722.mli.par EQA.dem.par DEM.dem 20260722.lt  ls_map  inc  pix_sigma0 pix_gamma0
 
 ### 15 `dis2pwr`看对比
 
