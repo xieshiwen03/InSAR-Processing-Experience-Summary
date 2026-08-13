@@ -278,7 +278,7 @@ SLC_mosaic_S1_TOPS 20260803.vv.RSLC_tab  20260803.rslc 20260803.rslc.par  10 2
 
 ### 2 `multi_look` `dis2pwr` 看一下拼接结果
 ```bash
-multi_look 20260803.rslc 20260803.rslc.par 20260803.rslc.mli 20260803.rslc.mli.par 10 2
+multi_look 20260803.rslc 20260803.rslc.par 20260803.rmli 20260803.rmli.par 10 2
 dis2pwr 20260803.rmli 20260803.rmli 6763 6763
 ```
 
