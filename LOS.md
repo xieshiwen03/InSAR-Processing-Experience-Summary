@@ -197,7 +197,7 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 27 `grep 'lines' EQA.dem.par` --7314
 
-### 28 `diispwr geo_20260722.mli `看结果
+### 28 `dispwr geo_20260722.mli `看结果
 
     dispwr geo_20260722.mli 10872
 
