@@ -123,14 +123,14 @@ _先把文件分成升轨和降轨，方便后续处理_
 
 ### 17 `cat 20260722.diff_par`查看偏移量
 
-### 18 `oddset_pwrm`
+### 18 `offset_pwrm`
 
     offset_pwrm pix_sigma0 20260722.mli 20260722.diff.par  offs snr 256 256 offsets 2 32 32 0.2
 
 > _`number of offsets above correlation threshold: 573 of 1024` 要超过10%_  
 > _效果不好时：256 256 调大、32 32 调小_
 
-### 19 `oddset_fitm`
+### 19 `offset_fitm`
 
     offset_fitm offs snr  20260722.diff.par  - -  0.3 3
 
@@ -268,7 +268,7 @@ ScanSAR_coreg.py 20260722.vv.SLC_tab 20260722 20260803.vv.SLC_tab    20260803 20
 
 > **20260722_20260803diff.bmp:配准结果**
 
-## 干涉
+## *干涉
 
 ### 1 `SLC_mosaic` 拼接
 
@@ -395,7 +395,7 @@ disdt_pwr geo_20260722_20260803.diff.unw  DEM/geo_20260722.mli  10872 1 0 -3.14 
 ### 1 `dispmap_LOS` 函数
 
 ```bash
-dispmap_LOS 20260722_20260803.diff.unw  10872 5.406 geo_20260722_20260803.diff.los
+dispmap_LOS geo_20260722_20260803.diff.unw  10872 5.406 geo_20260722_20260803.diff.los
 ```
 
 > _LOS:geo_20260722_20260803.diff.los_
