@@ -329,7 +329,7 @@ adf 20260722_20260803.diff_int 20260722_20260803.diff_int_filt 20260722_20260803
 
 > **sm 滤波结果**
 > **cc 相干性系数-根据相干性系数来确定掩膜阈值**
-> **Alpha 0.8 滤波强度**、
+> **Alpha 0.8 滤波强度**
 
 ### 9 `dis2pwr`滤波前后对比
 
@@ -411,3 +411,9 @@ data2geotiff DEM/EQA.dem.par geo_20260722_20260803.diff.los  2 geo_20260722_2026
 ```
 
 > _tiff格式：geo_20260722_20260803.diff.los.tif_
+> 
+### 2 `gdal_translate -og GSBG` 把tif转成grd
+
+```bash
+gdal_translate -of GSBG geo_20260716_20260728.diff.unw.tif  geo_20260716_20260728.diff.unw.grd
+```
