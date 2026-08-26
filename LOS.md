@@ -1,6 +1,6 @@
 # **GAMMA**
 
-_先把文件分成升轨和降轨，方便后续处理_
+_此部分是Sentinel-1的GAMMA处理部分_
 
 ## 配准
 
@@ -268,7 +268,7 @@ ScanSAR_coreg.py 20260722.vv.SLC_tab 20260722 20260803.vv.SLC_tab    20260803 20
 
 > **20260722_20260803diff.bmp:配准结果**
 
-## *干涉
+## 干涉
 
 ### 1 `SLC_mosaic` 拼接
 
@@ -282,7 +282,7 @@ multi_look 20260803.rslc 20260803.rslc.par 20260803.rmli 20260803.rmli.par 10 2
 dis2pwr 20260803.rmli 20260803.rmli 6763 6763
 ```
 
-### 3 `create_offset` 计算偏移量
+### 3 `create_offset` 计算偏移量 *以下可以不用做，直接接mcf
 
 ```bash
 create_offset 20260722.slc.par  20260803.rslc.par 20260722_20260803.off_test 1 1 1
