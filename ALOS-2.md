@@ -201,7 +201,9 @@ phase_sim 20150114.slc.par 20150114_20160420.off 20150114_20160420.base_o DEM/20
 **更新差分干涉结果：**
 
 ```bash
-LC_diff_intf 20150114.slc 20160420.rslc 20150114.slc.par 20160420.rslc.par 20150114_20160420.off 20150114_20160420.phase_sim.unw 20150114_20160420.diff_int 10 2
+SLC_diff_intf 20150114.slc 20160420.rslc 20150114.slc.par 20160420.rslc.par 20150114_20160420.off 20150114_20160420.phase_sim.unw 20150114_20160420.diff_int 10 2
 ```
-
+``` bash
+dispwr 20150114_20160420.diff_int 2692
+```
 ### 16 `mcf`滤波
