@@ -55,7 +55,7 @@ dispwr 20150114.mli 3846
 SLC_corners 20150114.slc.par 1000
 ```
 
-- longitude: 33.07 - 32.25
+- longitude: 32.25 - 33.07
 - latitude: 130.22 - 131.08
 
 ### 12 在`FABDEM`操作
@@ -65,7 +65,7 @@ cd ~/FABDEM/
 ```
 
 ```bash
-python fabdem2gamma.py -lon 130 132 -l;at 32 34 -o srtm
+python fabdem2gamma.py -lon 130 132 -lat 32 34 -o srtm
 ```
 
 ```bash
