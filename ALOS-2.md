@@ -46,7 +46,7 @@ multi_look ../20150114.slc ../20150114.slc.par 20150114.mli 20150114.mli.par 7 6
 ### 10 `dispwr`
 
 ```bash
-dsipwr 20150114.mli 3846
+dispwr 20150114.mli 3846
 ```
 
 ### 11 `SLC_corners` 看经纬度
