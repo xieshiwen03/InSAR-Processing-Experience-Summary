@@ -165,7 +165,7 @@ ls
 ### 15 差分干涉\_接在配准后
 
 ```bash
-create_offset 20150114.slc.par  20160420.rslc.par 20150114_20160420.off 1 1 1
+create_offset 20150114.slc.par  20160420.rslc.par 20150114_20160420.off 1 7 6 0
 ```
 
 ```bash
@@ -177,7 +177,7 @@ phase_sim 20150114.slc.par 20150114_20160420.off 20150114_20160420.base DEM/2015
 ```
 
 ```bash
-SLC_diff_intf  20150114.slc 20160420.rslc 20150114.slc.par  20160420.rslc.par  20150114_20160420.off 20150114_20160420.phase_sim.unw  20150114_20160420.diff_int 10 2
+SLC_diff_intf  20150114.slc 20160420.rslc 20150114.slc.par  20160420.rslc.par  20150114_20160420.off 20150114_20160420.phase_sim.unw  20150114_20160420.diff_int 7 6
 ```
 
 **基线精化：**
@@ -201,9 +201,9 @@ phase_sim 20150114.slc.par 20150114_20160420.off 20150114_20160420.base_o DEM/20
 **更新差分干涉结果：**
 
 ```bash
-SLC_diff_intf 20150114.slc 20160420.rslc 20150114.slc.par 20160420.rslc.par 20150114_20160420.off 20150114_20160420.phase_sim.unw 20150114_20160420.diff_int 10 2
+SLC_diff_intf 20150114.slc 20160420.rslc 20150114.slc.par 20160420.rslc.par 20150114_20160420.off 20150114_20160420.phase_sim.unw 20150114_20160420.diff_int 7 6
 ```
 ``` bash
-dispwr 20150114_20160420.diff_int 2692
+dispwr 20150114_20160420.diff_int 3846
 ```
 ### 16 `mcf`滤波
