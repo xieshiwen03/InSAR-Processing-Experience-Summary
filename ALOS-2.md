@@ -204,6 +204,26 @@ phase_sim 20150114.slc.par 20150114_20160420.off 20150114_20160420.base_o DEM/20
 SLC_diff_intf 20150114.slc 20160420.rslc 20150114.slc.par 20160420.rslc.par 20150114_20160420.off 20150114_20160420.phase_sim.unw 20150114_20160420.diff_int 7 6
 ```
 ``` bash
-dismph_pwr 20150114_20160420.diff_int 20160420.rmli 3846 
+dismph_pwr 20150114_20160420.diff_int 20160420.rmli 3846
 ```
+**减少蓝色**
+``` bash
+create_diff_par  20160420.rmli.par  - 20150114.diff_par 1 0
+```
+``` bash
+quad_fit  20150114_20160420.diff.unw 20150114.diff_par  4 4 - plot_data 0 pmodel
+```
+``` bash
+dis2dt_pwr  20150114_20160420.diff.unw  pmodel  3846 3846
+```
+``` bash
+dis2dt_pwr  20150114_20160420.diff.unw  pmodel  20160420.rmli 3846 3846 1 0 0 0  -3.14  3.14 1
+```
+``` bash
+sub_phase   20150114_20160420.diff.unw  pmodel  20150114.diff_par  20150114_20160420.diff.unw1 0 0 0 
+```
+``` bash
+dis2dt_pwr  20150114_20160420.diff.unw  20150114_20160420.diff.unw1  20160420.rmli 3846 3846 1 0 0 0  -3.14  3.14 1
+```
+
 ### 16 `mcf`滤波
