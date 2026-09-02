@@ -214,9 +214,6 @@ create_diff_par  20160420.rmli.par  - 20150114.diff_par 1 0
 quad_fit  20150114_20160420.diff.unw 20150114.diff_par  4 4 - plot_data 0 pmodel
 ```
 ``` bash
-dis2dt_pwr  20150114_20160420.diff.unw  pmodel  3846 3846
-```
-``` bash
 dis2dt_pwr  20150114_20160420.diff.unw  pmodel  20160420.rmli 3846 3846 1 0 0 0  -3.14  3.14 1
 ```
 ``` bash
