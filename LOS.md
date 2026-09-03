@@ -402,6 +402,12 @@ dispmap_LOS geo_20260722_20260803.diff.unw  10872 5.406 geo_20260722_20260803.di
 > _greg:sentinel-1:5.406_
 > _greg:ALOS:1.246:_
 
+**不在gamma转los方法（终端直接运行）：**
+ ``` bash
+gmt grdmath geo_20160327_20160420.diff.unw_corrected.tif -0.05406 MUL 4 PI MUL DIV = geo_20160327_20160420.diff.los.tif
+```
+
+
 ## GAMMA转成geotiff
 
 ### 1 `data2geotiff`
