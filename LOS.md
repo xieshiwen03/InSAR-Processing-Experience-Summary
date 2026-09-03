@@ -404,7 +404,8 @@ dispmap_LOS geo_20260722_20260803.diff.unw  10872 5.406 geo_20260722_20260803.di
 
 **不在gamma转los方法（终端直接运行）：**
  ``` bash
-gmt grdmath geo_20160327_20160420.diff.unw_corrected.tif -0.05406 MUL 4 PI MUL DIV = geo_20160327_20160420.diff.los.tif
+gdal_calc.py -A geo_20160327_20160420.diff.unw_corrected.tif --outfile=los.tif --calc="A*0.004413825" --type=Float32 --format=GTiff --NoDataValue=nan --overwrite
+
 ```
 
 
