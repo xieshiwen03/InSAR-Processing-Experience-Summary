@@ -395,7 +395,7 @@ disdt_pwr geo_20260722_20260803.diff.unw  DEM/geo_20260722.mli  10872 1 0 -3.14 
 ### 1 `dispmap_LOS` 函数
 
 ```bash
-dispmap_LOS geo_20260722_20260803.diff.unw  10872 5.406 geo_20260722_20260803.diff.los
+dispmap_LOS geo_20260722_20260803.diff.unw  10872 5.406 geo_20260722_20260803.diff.los 1
 ```
 
 > _LOS:geo_20260722_20260803.diff.los_
