@@ -193,7 +193,7 @@ _此部分是Sentinel-1的GAMMA处理部分_
 
 ### 26 `geocode_back` 反投影
 
-    geocode_back 20260722.mli 6775 20260722.lt_fine geo_20260722.mli 10872 7314
+    geocode_back 20260722.mli 6763 20260722.lt_fine geo_20260722.mli 10872 7314
 
 ### 27 `grep 'lines' EQA.dem.par` --7314
 
