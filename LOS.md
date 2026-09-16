@@ -359,6 +359,10 @@ eog 20260722_20260803.cc_mask.bmp
 ```bash
  rascc_mask 20260716_20260728.diff.cc 20260716.rmli 6775 1 1 0  1 1 0.85 0 0 0.1 1 0.85 1 20260716_20260728.diff.cc_mask.bmp
 ```
+***高级掩膜***
+```bash
+single_class_mapping  2 20260716.rmli  0 0.5 20260716_20260728.diff.cc  0.3 1 20260716_20260728.mask.bmp  6775 
+```
 
 ### 2 'disdt_pwr'查看生成图，选择解缠开始点
 
