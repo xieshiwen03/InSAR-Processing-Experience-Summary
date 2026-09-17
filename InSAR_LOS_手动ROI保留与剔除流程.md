@@ -99,7 +99,8 @@ lon_2 lat_2
 src=geo_20260722_20260803.diff.los.tif
 roi=keep_roi_asc.xy
 out=geo_20260722_20260803.diff.los_keep_roi
-
+```
+```bash
 gmt grd2xyz "geo_20260722_20260803.diff.los.tif" -s --FORMAT_FLOAT_OUT=%.12g | gmt select -F"keep_roi_asc.xy" -fg |  gmt xyz2grd -R"geo_20260722_20260803.diff.los.tif" -fg -G"geo_20260722_20260803.diff.los_keep_roi.nc"
 ```
 
@@ -119,7 +120,8 @@ gmt grd2xyz "geo_20260722_20260803.diff.los.tif" -s --FORMAT_FLOAT_OUT=%.12g | g
 
 ```bash
 gmt grdconvert "geo_20260722_20260803.diff.los_keep_roi.nc"  -G"geo_20260722_20260803.diff.los_keep_roi_gmt.tif=gd:GTiff"
-
+```
+```bash
 gdal_translate -of GTiff -a_srs EPSG:4326 -a_nodata nan "geo_20260722_20260803.diff.los_keep_roi_gmt.tif" "geo_20260722_20260803.diff.los_keep_roi.tif"
 ```
 
@@ -139,7 +141,8 @@ geo_20260722_20260803.diff.los_keep_roi.tif
 src=geo_20260716_20260728.diff.los.tif
 remove=remove_hinagu.xy
 out=geo_20260716_20260728.diff.los_manualmask
-
+```
+```bash
 gmt grd2xyz "geo_20260716_20260728.diff.los.tif" -s --FORMAT_FLOAT_OUT=%.12g |  gmt select -F"$remove" -If -fg | gmt xyz2grd -R"geo_20260716_20260728.diff.los.tif" -fg  -G"geo_20260716_20260728.diff.los_manualmask.nc"
 ```
 
@@ -156,7 +159,8 @@ gmt grd2xyz "geo_20260716_20260728.diff.los.tif" -s --FORMAT_FLOAT_OUT=%.12g |  
 
 ```bash
 gmt grdconvert "geo_20260716_20260728.diff.los_manualmask.nc" -G"geo_20260716_20260728.diff.los_manualmask_gmt.tif=gd:GTiff"
-
+```
+```bash
 gdal_translate -of GTiff -a_srs EPSG:4326 -a_nodata nan "geo_20260716_20260728.diff.los_manualmask_gmt.tif" "geo_20260716_20260728.diff.los_manualmask.tif"
 ```
 
@@ -186,9 +190,11 @@ gmt grdimage "geo_20260716_20260728.diff.los_manualmask.tif" -R... -J... -Cä½ çš
 
 ```bash
 gmt grdmath "geo_20260716_20260728.diff.los_manualmask.nc" 0 AND = "geo_20260716_20260728.diff.los_manualmask_zero.nc"
-
+```
+```bash
 gmt grdconvert "geo_20260716_20260728.diff.los_manualmask_zero.nc" -G"geo_20260716_20260728.diff.los_manualmask_zero_gmt.tif=gd:GTiff"
-
+```
+```bash
 gdal_translate -of GTiff -a_srs EPSG:4326 "geo_20260716_20260728.diff.los_manualmask_zero_gmt.tif" "geo_20260716_20260728.diff.los_manualmask_zero.tif"
 ```
 
